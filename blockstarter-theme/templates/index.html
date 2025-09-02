@@ -1,0 +1,29 @@
+<!-- wp:template-part {"slug":"header","theme":"blockstarter-theme"} /-->
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"2rem","bottom":"2rem"},"blockGap":"1.5rem"}},"layout":{"type":"constrained","contentSize":"var(--wp--style--layout--content-size)","wideSize":"var(--wp--style--layout--wide-size)"}} -->
+<div class="wp-block-group" style="padding-top:2rem;padding-bottom:2rem">
+  <!-- wp:heading {"fontSize":"xl"} -->
+  <h2>Welcome to BlockStarter</h2>
+  <!-- /wp:heading -->
+
+  <!-- wp:paragraph -->
+  <p>A clean, minimal block theme starter. Edit this template in the Site Editor or replace with your own layout.</p>
+  <!-- /wp:paragraph -->
+
+  <!-- wp:query {"queryId":1,"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date"},"displayLayout":{"type":"list"}} -->
+  <div class="wp-block-query">
+    <!-- wp:post-template -->
+      <!-- wp:post-title {"isLink":true} /-->
+      <!-- wp:post-excerpt {"moreText":"Read more"} /-->
+      <!-- wp:separator {"opacity":"css"} -->
+      <hr class="wp-block-separator has-css-opacity"/>
+      <!-- /wp:separator -->
+    <!-- /wp:post-template -->
+    <!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"space-between"}} -->
+      <!-- wp:query-pagination-previous /-->
+      <!-- wp:query-pagination-numbers /-->
+      <!-- wp:query-pagination-next /-->
+    <!-- /wp:query-pagination -->
+  </div>
+  <!-- /wp:query -->
+</div>
+<!-- /wp:group -->
